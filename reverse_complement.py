@@ -16,7 +16,7 @@ def reverse_complement(genome: str) -> str:
     """Returns the reverse complement of the genome."""
     reverse_complement = ''
     # Iterate through the Genome from index 0 to the length of the Genome.
-    for i in range(len(genome)):
+    for i in range(len(genome) - 1, -1, -1):
         # Check if the current character is A, T, G, or C. 
         if genome[i] == 'A':
             reverse_complement += 'T'
